@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@android:color/black">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/drawer_buttons"
+		android:orientation="vertical"
+		android:background="#000000">
+
+		<View
+			android:background="@color/divider_inverted"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/line_dimension"/>
+
+		<TextView
+			android:id="@+id/drawer_button_xterm"
+			android:layout_width="match_parent"
+			android:layout_height="72dp"
+			android:text="@string/app_name"
+			android:paddingStart="20dp"
+			android:paddingEnd="20dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:gravity="center_vertical"
+			android:textSize="12sp"
+			android:textAllCaps="true"
+			android:clickable="true"
+			android:textColor="@color/indigo"/>
+
+		<View
+			android:background="@color/divider_inverted"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/line_dimension"/>
+
+		<LinearLayout
+			android:id="@+id/terminal_android"
+			android:gravity="center_vertical"
+			android:layout_width="match_parent"
+			android:layout_height="350dp"
+			android:layout_gravity="center_horizontal"
+			android:paddingEnd="16dp"
+			android:paddingStart="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"/>
+
+		<View
+			android:background="@color/divider_inverted"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/line_dimension"/>
+
+		<FrameLayout
+			android:id="@+id/content_schedule"
+			android:layout_width="match_parent"
+			android:layout_height="225dp"
+			android:paddingStart="20dp"
+			android:paddingEnd="20dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"/>
+
+		<View
+			android:background="@color/divider_inverted"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/line_dimension"/>
+
+	</LinearLayout>
+
+</ScrollView>
+

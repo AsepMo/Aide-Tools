@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:orientation="horizontal"
+			android:padding="10dp">
+
+			<ImageView
+				android:id="@+id/imgvw_icn"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:layout_gravity="center"
+				android:scaleType="fitCenter"
+				android:src="@drawable/apk_v2"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/txtvw_pkgname"
+					style="@style/labelStyle2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6dp"
+					tools:text="Package Name"
+					android:text="Name :"/>
+
+				<TextView
+					android:id="@+id/txtvw_vname"
+					style="@style/labelStyle2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6dp"
+					tools:text="0.0"
+					android:text="Package Name :"/>
+
+				<TextView
+					android:id="@+id/txtvw_vc"
+					style="@style/labelStyle2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6dp"
+					tools:text="10"
+					android:text="Version Name :"/>
+
+				<TextView
+					android:id="@+id/txtvw_firsttime"
+					style="@style/labelStyle2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6dp"
+					tools:text="10"
+					android:text="Version Code :"/>
+
+				<TextView
+					android:id="@+id/txtvw_lastupdated"
+					style="@style/labelStyle2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6dp"
+					tools:text="10"
+					android:text="First Install"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<ListView
+			android:id="@+id/list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"/>
+
+</LinearLayout>
+
